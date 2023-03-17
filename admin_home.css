@@ -1,0 +1,53 @@
+*{
+    font-family: sans-serif;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+#side_panel{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-wrap: wrap;
+    width: 30%;
+    background-color: gray;
+    height: 110%;
+    margin-top: -2%;
+    position: relative;
+    margin-left: -2%;
+}
+ul{
+    position: absolute;
+    width: 100%;
+   margin-left: 0;
+ top: 10px;
+}
+li{
+
+    position: relative;
+    overflow: hidden;
+    flex-wrap: wrap;
+    flex-direction: row;
+padding: 3px;
+margin-bottom: 0;
+}
+img{
+  bottom: 0;
+  margin-bottom: -6px;
+transition: 1s;
+}
+span{
+    position: absolute;
+    left: 30%;
+    bottom: 0;
+font-size: 90%;
+}
+li:hover{
+cursor: pointer;
+color: white;
+}
+li:hover img{
+    -webkit-transform: rotate(360deg);
+   transform: rotate(360deg);
+}

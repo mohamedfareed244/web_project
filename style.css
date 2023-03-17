@@ -1,0 +1,250 @@
+*{
+    font-family: sans-serif;
+}
+body,html{
+    position: relative;
+   width: 100%;
+   height: 100%;
+}
+#safety_in_rules{
+    display: flex;
+    justify-content: space-around;
+    transition-delay: 1.5s;
+    transition: 1s;
+
+   
+}
+.safety_list{
+    margin-top: 50px;
+    transition-delay: 1.5s;
+    transition: 1s;
+}
+#safety_rules{
+transition: .6s;
+    box-shadow: 0 0 0 100vmax rgba(20, 20, 24, 0.903);
+    clip-path: inset(0 -100vmax);
+    width: 100%;
+    height: 25%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   flex-direction: row;
+   background-color: rgba(20, 20, 24, 0.903);
+   overflow: hidden;
+}
+
+.safety_list li{
+    font-size: 13px;
+    transition: 1s;
+    transition-delay: 1.5s;
+
+}
+li{
+    width: 400px;
+    margin-bottom: 10px;
+    color: white;
+    display: list-item;
+}
+#safety_label{
+transition-delay: 1s;
+    transition: .6s;
+    color: rgba(134, 244, 98, 0.727);
+    margin-top: 30px;
+    margin-left: 0;
+
+}
+#last_in_item{
+    margin-top: 20px;
+}
+#safety_image{
+    transition-delay: 1s;
+    transition: .6s;
+    margin-top: 70px;
+    margin-left: -350px;
+}
+#headaftersafety{
+    text-align: center;
+    margin-left: 0;
+}
+#menulist{
+    display: flex;
+    list-style: none;
+   overflow:auto;
+    white-space: nowrap;
+    flex-direction: row;
+}
+#menulist::-webkit-scrollbar {
+    display: none;
+  }
+#menulist li{
+    margin: 15px 5px;
+ 
+}
+#menulist li a{
+    padding: 13px;
+  
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    border-radius: 0px;
+
+}
+
+#menulist li a:hover{
+    cursor: pointer;
+border-bottom: 2px solid gray;
+   
+}
+img{
+    transition: 1s;
+}
+.menu_items{
+    overflow: hidden;
+    position: relative;
+    background-color:rgb(209, 209, 203);
+    width: 250px;
+    height: 250px;
+    margin: 10px 10px;
+    flex-basis: auto;
+    flex-grow: 0;
+ flex-shrink: 1;
+ flex: 0 1 auto;
+ order: 0;
+}
+#menubody{
+    position: absolute;
+    left: 30px;
+    flex-flow:  wrap;
+    display: flex;
+    flex-direction: row;
+flex-wrap: wrap;
+justify-content:flex-start;
+align-content: normal;
+align-items: center;
+}
+.descr_and_add{
+  
+    width: 100%;
+    height: 100%;
+    top: 150%;
+    position: absolute;
+    background-color: rgba(253, 253, 253, 0.699);
+    transition: .8s;
+}
+.icons{
+    position: absolute;
+    top: 78%;
+    left: 82%;
+    border-radius: 15px;
+transition: .2s;
+width: 13%;
+}
+.icons:hover{
+    cursor: pointer;
+    background-color: rgb(43, 202, 43);
+}
+.description{
+    left: 5%;
+    font-size: 12px;
+    max-width: 75%;
+    color: black;
+    position: absolute;
+    bottom: 0;
+    
+}
+.menu_items:hover .descr_and_add{
+    top: 0px;
+    
+ }
+ .menu_items:hover img{ 
+    transform: scale(1.5);
+ }
+ .icons:hover{
+    cursor: pointer;
+ }
+ #Learn_more{
+    display: none;
+    position: absolute;
+    
+  left: 75%;
+  border-radius: 3px;
+  background-color: rgb(247, 247, 31);
+    border: none;
+    width: 20%;
+    top: 12%;
+   padding: 5px;
+   font-size: 9px;
+    transition: .6s;
+    
+ }
+ #Learn_more:hover{
+    background-color: rgb(237, 237, 41);
+    cursor: pointer;
+    font-weight: bold;
+ }
+ @media only screen and (max-width:700px) {
+    /* For mobile phones: */
+    #Learn_more{
+        display: inline;
+    }
+
+    #safety_in_rules::-webkit-scrollbar {
+        display: none;
+      }
+    .safety_list{
+        margin-top: 0px;
+        margin-bottom: 0;
+       border: none;
+       padding: 0;
+       flex-wrap:wrap;
+       list-style:circle;
+       text-align: justify;
+       text-justify: inter-word;
+    }
+    .safety_list li{
+        max-width: 50%;
+        font-size: 7px;
+        margin-top: 0;
+        margin-bottom: 3px;
+        flex-wrap:wrap;
+        text-overflow: ellipsis;
+       overflow: hidden;
+    }
+   #safety_rules{
+    height: 20%;
+    flex-direction: column;
+    justify-content:center;
+    flex-wrap:wrap;
+   }
+   #safety_in_rules{
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+    margin-top: 0%;
+    margin-left: -150%;
+ flex-direction: column;
+ justify-content: center;
+ flex-wrap: wrap;
+padding-left: 1px;
+   }
+   #safety_image{
+    width: 70px;
+    height:70px;
+    margin-top: 0;
+    margin-left: 30%;
+   }
+   #safety_label{
+    margin-top: 0;
+    margin-left: 20%;
+    font-size: 20px;
+   }
+   #last_in_item{
+    margin-top: 0;
+    margin-bottom: 0;
+   }
+   
+  }
+
+

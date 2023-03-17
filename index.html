@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+<link rel="stylesheet" href="style.css">
+
+<script>
+   
+function show_rules(){
+    console.log('2');
+ /*document.getElementById('safety_rules').style='height:30%';*/
+document.getElementById('safety_image').style='margin-left:3%; width:50px; height:50px;';
+document.getElementById('safety_label').style='font-size:7px; margin-left:3%;';
+document.getElementById('Learn_more').style='left:2%; top: 17%;';
+document.getElementById('Learn_more').innerHTML="Hide";
+
+
+document.getElementById('safety_in_rules').style=' margin-left:10%';
+document.getElementById("Learn_more").onclick=hide;
+} 
+function hide(){
+    console.log('1');
+    document.getElementById('Learn_more').innerHTML="Learn More";
+
+document.getElementById('safety_image').style='margin-left:30%; width:80px; height:80px;';
+document.getElementById('safety_label').style='font-size:20px; margin-left:20%;';
+document.getElementById('Learn_more').style='left:75%; top: 12%;';
+document.getElementById('safety_in_rules').style='margin-left:-150%';
+document.getElementById("Learn_more").onclick=show_rules;
+}
+
+
+</script>
+
+
+</head>
+
+<body>
+
+   <div id ="safety_rules">
+    <button id ="Learn_more" onclick="show_rules()">Learn More</button>
+<h3 id ="safety_label">For Your Safety ! </h3>
+<img src="photos/safety.png" alt="" width="100px" height="100px" id ="safety_image">
+<div id="safety_in_rules">
+    <ul class ="safety_list">
+        <li>Riders/cooks have their body temperature taken on an hourly 
+            bases to monitor their health.</li>
+        <li>Riders/cooks wear masks and use hand sanitizers regularly.</li>
+        <li id ="last_in_item">Cashless transactions through credit card payments.</li>
+    </ul>
+    <ul class ="safety_list">
+        <li>Riders/cooks disinfect their delivery boxes and kitchens twice a day.</li>
+        <li>Riders follow a contact-less delivery approach where they ring the door 
+            and leave meals at the doorstep.</li>
+        <li>Riders follow a contact-less delivery approach where they ring the door 
+            and leave meals at the doorstep.</li>
+    </ul>
+</div>
+
+   
+
+   </div>
+
+
+   <div id="menu_selections">
+    <h2 id ="headaftersafety">Choose What You Love </h2>
+    <hr>
+  <ul id="menulist">
+    
+    <li><a href="index.html">Frozen Food </a></li>
+    <li><a href="index.html">Ready To Eat </a></li>
+    <li><a href="index.html">Individual Meals</a></li>
+    <li><a href="index.html">Desserts</a></li>
+    <li><a href="index.html">Beverages </a></li>
+  
+  </ul>
+   
+</div>
+<hr>
+
+<section id ="menubody">
+<div class="menu_items" ><img src="photos/burger.webp" alt="" width="100%" height="100%">
+    <div class="descr_and_add"><img src="photos/add.png" alt="" 
+         class="icons">
+    <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Qui voluptas nam est minima sapiente reprehenderit quis 
+        </p></div>
+
+</div>
+<div class="menu_items"><img src="photos/shawerma.jpeg" alt="" width="100%" height="100%">
+    <div class="descr_and_add"><img src="photos/add.png" alt="" 
+        class="icons">
+   <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+       Qui voluptas nam est minima sapiente reprehenderit quis 
+       </p></div></div>
+<div class="menu_items"><img src="photos/burger.webp" alt="" width="100%" height="100%">  <div class="descr_and_add"><img src="photos/add.png" alt="" 
+    class="icons">
+<p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+   Qui voluptas nam est minima sapiente reprehenderit quis 
+   </p></div></div>
+<div class="menu_items"><img src="photos/shawerma.jpeg" alt="" width="100%" height="100%">  <div class="descr_and_add"><img src="photos/add.png" alt="" 
+    class="icons">
+<p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+   Qui voluptas nam est minima sapiente reprehenderit quis 
+   </p></div></div>
+<div class="menu_items"><img src="photos/burger.webp" alt="" width="100%" height="100%">  <div class="descr_and_add"><img src="photos/add.png" alt="" 
+    class="icons">
+<p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+   Qui voluptas nam est minima sapiente reprehenderit quis 
+   </p></div></div>
+   <div class="menu_items"><img src="photos/burger.webp" alt="" width="100%" height="100%">  <div class="descr_and_add"><img src="photos/add.png" alt="" 
+    class="icons">
+<p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+   Qui voluptas nam est minima sapiente reprehenderit quis 
+   </p></div></div>
+   <div class="menu_items"><img src="photos/burger.webp" alt="" width="100%" height="100%">  <div class="descr_and_add"><img src="photos/add.png" alt="" 
+    class="icons">
+<p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+   Qui voluptas nam est minima sapiente reprehenderit quis 
+   </p></div></div>
+   <div class="menu_items"><img src="photos/burger.webp" alt="" width="100%" height="100%">  <div class="descr_and_add"><img src="photos/add.png" alt="" 
+    class="icons">
+<p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+   Qui voluptas nam est minima sapiente reprehenderit quis 
+   </p></div></div>
+
+
+</section>
+
+   
+    
+</body>
+</html>
