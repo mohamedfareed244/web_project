@@ -1,0 +1,168 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    height: 100px;
+    background-size: cover;
+    background-color: black;
+}
+.para{
+ margin: -44px;
+font-size: 16px;
+width: 59%;
+}
+img{
+    margin: 22%;
+    width: 44%;
+}
+.logo li {
+    list-style: none;
+    margin-right: -36px;
+    width:105% ;
+}
+.left_nav li{
+    list-style: none;
+    margin-right: -86px;
+    width:90% ;
+}
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+a:hover {
+    color: rgb(241, 183, 68);
+}
+header {
+    position: relative;
+    padding: 0 32px;
+}
+.navbar {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 76px;
+    max-width: 1200px;
+    margin: -8px -46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+ul.navbar.contant {
+    margin: -38px -44px;
+    width: 44%;
+}
+.left_nav{
+    background-color: white;
+    width: 135%;
+    height: 76px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    margin: -1107px;
+    padding: 21px;
+
+}
+.li_order a{
+    background-color: green;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    padding: 12px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 9%;
+}
+.li_order a:hover{
+color: rgb(241, 183, 68);
+}
+.signup{
+    margin: -11px 48px;
+}
+.navbar .logo {
+    background-color: white;
+    display: flex;
+    overflow: hidden;
+    margin: 40px;
+}
+.navbar .togle_btn {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.action_btn {
+background-color: rgb(215, 138, 30);
+ border: none;
+ outline: none;
+ color: white;
+ padding: 8px 1px;
+ font-size: 16px;
+ margin: -29px 133px;
+ border-radius: 12px;
+ text-align: center;
+}
+.action_btn a{
+    color: white;
+}
+.action_btn a:hover{
+    color: rgb(45, 44, 44);
+}
+.downbox {
+    background-color: whitesmoke;
+    display: none;
+    position: absolute;
+    right: -4px;
+    top: 77px;
+    height: 0;
+    width: 241px;
+    backdrop-filter: blur(182px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.downbox.open {
+    height: 177px;
+}
+.downbox li {
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 7px;
+}
+.downbox .action_btn {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+@media(max-width:992px) {
+
+    .navbar .navbarcontant,
+    .navbar .action_btn , .navbar .order
+    , .navbar .signup , .para
+    , .li_order a{
+    
+        display: none;
+    }
+
+    .navbar .togle_btn {
+        display: block;
+    }
+    .downbox {
+        display: block;
+    }
+}
+@media(max-width:576px){
+    .dwonbox{
+        left:32px;
+        width: unset;
+    }
+}
