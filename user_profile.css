@@ -3,10 +3,8 @@ body , html{
     height: 100%;
 }
 li img{
-  
-
-    width: 20%;
-    height: 20%;
+    width: 10%;
+    max-width: 60px;
 }
 ul li:hover{
     cursor: pointer;
@@ -19,30 +17,35 @@ ul li{
     color: white;
 }
 ul{
-   
- margin-left: -29px;
+   margin-top: 20px;
+ margin-left: -20px;
     list-style: none;
     float: left;
 }
 #side_panel{
-    height: 100%;
-    width: 30%;
+    margin-left: -1.5%;
+    margin-top: -1.5%;
+    overflow: auto;
+    height: 102%;
+    width: 25%;
     background-color: rgb(65, 69, 65);
 }
+ul{
+    width: 100%;
+  }
 @media only screen and (max-width:700px){
-    #side_panel{
-        overflow: auto;
-    }
+   
     #side_panel::-webkit-scrollbar {
         display: none;
       }
-
-    li img{
-        height: 10%;
-        width: 10%; 
+      li img{
+        width: 5%;
+        min-width: 30px;
     }
+
+  
     #side_panel{
         height: 30%;
-        width: 100%;
+        width: 102%;
     }
 }
