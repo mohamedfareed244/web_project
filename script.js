@@ -20,3 +20,24 @@ document.getElementById('Learn_more').style='left:75%; top: 12%;';
 document.getElementById('safety_in_rules').style='margin-left:-150%';
 document.getElementById("Learn_more").onclick=show_rules;
 }
+function turnObjToArray(obj){
+    return [].map.call(obj, function(element) {
+        return element;
+    })
+}
+function set_fav(value,obj){
+if(value){
+    let indexs=document.getElementsByClassName('favs');
+    let arr=turnObjToArray(indexs);
+   let  curr=arr.indexOf(obj);
+document.getElementsByClassName('favrs')[curr].style="display:block";
+document.getElementsByClassName('favs')[curr].style="display:none";
+}else{
+    let indexs=document.getElementsByClassName('favrs');
+    let arr=turnObjToArray(indexs);
+    let curr=arr.indexOf(obj);
+document.getElementsByClassName('favs')[curr].style="display:block";
+document.getElementsByClassName('favrs')[curr].style="display:none";
+}
+
+}

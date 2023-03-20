@@ -187,8 +187,41 @@ width: 13%;
     cursor: pointer;
     font-weight: bold;
  }
- 
+ .favs{
+  
+    position: absolute;
+    width: 7%;
+    height: 7%;
+  left: 90%;
+  top: 2%;
+transition: .4s;
+ }
+ .favs:hover{
+    top: 3%;
+    left: 89%;
+    width: 8%;
+    height: 8%;
+    cursor: pointer;
 
+ }
+ 
+ .favrs{
+    display: none;
+    position: absolute;
+    width: 7%;
+    height: 7%;
+  left: 90%;
+  top: 2%;
+transition: .4s;
+ }
+ .favrs:hover{
+    top: 3%;
+    left: 89%;
+    width: 8%;
+    height: 8%;
+    cursor: pointer;
+
+ }
 
 
 
