@@ -1,0 +1,48 @@
+body , html{
+    width: 100%;
+    height: 100%;
+}
+li img{
+  
+
+    width: 20%;
+    height: 20%;
+}
+ul li:hover{
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 3px;
+    background-color: rgb(28, 186, 28);
+}
+ul li{
+    transition: .5s;
+    color: white;
+}
+ul{
+   
+ margin-left: -29px;
+    list-style: none;
+    float: left;
+}
+#side_panel{
+    height: 100%;
+    width: 30%;
+    background-color: rgb(65, 69, 65);
+}
+@media only screen and (max-width:700px){
+    #side_panel{
+        overflow: auto;
+    }
+    #side_panel::-webkit-scrollbar {
+        display: none;
+      }
+
+    li img{
+        height: 10%;
+        width: 10%; 
+    }
+    #side_panel{
+        height: 30%;
+        width: 100%;
+    }
+}
