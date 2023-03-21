@@ -41,3 +41,9 @@ document.getElementsByClassName('favrs')[curr].style="display:none";
 }
 
 }
+
+
+
+function myFunction() {
+  document.getElementById("adds_list").classList.toggle("show");
+}
