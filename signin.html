@@ -7,23 +7,64 @@
     <title>Document</title>
     <link rel="stylesheet" href="signin.css">
     <script src="https://kit.fontawesome.com/f4bd0b4361.js" crossorigin="anonymous"></script>
+    <script>
+         function validateemail(field)
+			{
+				if(field==''){
+					document.getElementById('mail').innerHTML='Please enter your email adress';
+                    document.getElementById('idmail').style.borderColor = "red";
+					return false;
+				}
+				else{
+					document.getElementById('mail').innerHTML='';
+					return true;
+				}
+			}
+            function validatepassword(field)
+			{
+				if(field==''){
+					document.getElementById('password').innerHTML='Please enter your password';
+                    document.getElementById('idpass').style.borderColor = "red";
+					return false;
+				}
+				else{
+					document.getElementById('password').innerHTML='';
+					return true;
+				}
+			}
+            function validate(form)
+            {
+				let fail='';
+				fail&=validateemail(form.idmail.value);
+                fail&=validatepassword(form.idpass.value);
+				
 
-   
+				if(fail)
+					return true;
+				else{
+					return false;
+				}
+			}
+    </script>
+
+
 </head>
 <body>
-    
+
     <div class="container">
-       
-        <img src="photos/signlogo.png" alt="">
-   
+
+        <!-- <img src="photos/signlogo.png" alt=""> -->
+
         <h1>Sign In</h1>
         <h3>Aussie food to be enjoyed</h3>
-        <form>
-        <input type="text" placeholder="Enter Email" name="email" required>
-        <input type="password" placeholder="Enter Password" name="psw" required>
+        <form action='#' method='post' onsubmit='return validate(this)'>
+        <input type="text" id="idmail" placeholder="Enter Email" >
+        <div id='mail' class='err'></div>
+        <input type="password" name="email" id="idpass" placeholder="Enter Password" name="psw">
+        <div id='password' class='err'></div>
         <button type="submit" class="registerbtn">Sign In</button> 
     </form>
-   
+
     <div class="icon">
         <i class="fa-brands fa-facebook"></i>
         <span>Facebook</span>
