@@ -1,12 +1,11 @@
-
 body{
-    background-image: url(photos/back3.jpg);
-    
+    /* background-image: url(photos/back3.jpg); */
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     font-family: sans-serif; 
-    
+
 }
 .container{
    width: 400px;
@@ -23,7 +22,7 @@ h1{
 }
 h3{
     text-align: center;
-   
+
     font-family:monospace
 }
 
@@ -44,7 +43,7 @@ form input{
 }
 form input:focus{
     border: none;
-   
+
 }
 
 
@@ -125,4 +124,8 @@ color: transparent;
 }
 .icon .fa-apple{
 color: rgb(82, 82, 87);
+}
+div.err
+{
+   color: red;
 }
