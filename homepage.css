@@ -39,7 +39,7 @@ body{
     text-decoration: none;
     color: #fff;
     padding: 4px;
-    transition: 3s;
+    transition: .5s;
 
 
 }
@@ -55,13 +55,13 @@ body{
     text-decoration: none;
     color: #fff;
     padding: 4px;
-    transition: 3s;
+    transition: 1s;
 } 
 
 ul li i:hover{
     box-shadow: 0 3px 50px orangered inset,0 3px 50px orangered inset,0 3px 50px orangered inset,0 3px 50px orangered inset;
     cursor: pointer;
-
+border-radius: 6px;
 }
 
 /* input[type="text"]{
@@ -72,6 +72,7 @@ ul li i:hover{
 
 
 .navbar ul li a:hover{
+    border-radius: 7px;
     box-shadow: 0 3px 50px orangered inset,0 3px 50px orangered inset,0 3px 50px orangered inset,0 3px 50px orangered inset;
 
 }
@@ -81,6 +82,13 @@ ul li i:hover{
 
 }
 
+.navbar{
+    position: fixed;
+    z-index: 1;
+  align-items: center;
+  left: 400px;
+  top: 10px;
+}
 .content{
     position: absolute;
     color: #fff;
@@ -134,9 +142,9 @@ border-radius: 20px 0 0 20px;
 
 .search:hover{
 
-box-shadow: 0 3px 50px orangered inset,0 3px 50px orangered inset,0 3px 50px orangered inset,0 3px 50px orangered inset;
+/* box-shadow: 0 3px 50px orangered inset,0 3px 50px orangered inset,0 3px 50px orangered inset,0 3px 50px orangered inset; */
    
-    cursor: pointer;
+    
 }
 
 
