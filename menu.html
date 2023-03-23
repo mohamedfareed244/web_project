@@ -7,34 +7,43 @@
     <title>Menu</title>
 <link rel="stylesheet" href="Css/style.css">
 <script src="js/script.js"></script>
-
+<script src="https://kit.fontawesome.com/f4bd0b4361.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
  
-   <div id ="safety_rules">
-    <button id ="Learn_more" onclick="show_rules()">Learn More</button>
-<h3 id ="safety_label">For Your Safety ! </h3>
-<img src="photos/safety.png" alt="" width="100px" height="100px" id ="safety_image">
-<div id="safety_in_rules">
-    <ul class ="safety_list">
-        <li>Riders/cooks have their body temperature taken on an hourly 
-            bases to monitor their health.</li>
-        <li>Riders/cooks wear masks and use hand sanitizers regularly.</li>
-        <li id ="last_in_item">Cashless transactions through credit card payments.</li>
-    </ul>
-    <ul class ="safety_list">
-        <li>Riders/cooks disinfect their delivery boxes and kitchens twice a day.</li>
-        <li>Riders follow a contact-less delivery approach where they ring the door 
-            and leave meals at the doorstep.</li>
-        <li>Riders follow a contact-less delivery approach where they ring the door 
-            and leave meals at the doorstep.</li>
-    </ul>
-</div>
+    <div class="container">
+        
+        <!-- <div class="imgg">
+            <img src="signlogo.png" alt="">
+        </div> -->
+        <i class="fa-solid fa-bars" id="fx" onclick="showmenu()"></i>
+        <div class="navbar">
+            <i class="fa-sharp fa-solid fa-xmark" id="fx" onclick="hidemenu()"></i>
+            <h1>Aussie</h1>
+      
+            <ul>
+                <li>
+                    <input class="search" type="text" placeholder="Search Food">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </li>
+                <li class ="part2"><a href="index.html">Home</a></li>
+                <li class ="part2"><a href="menu.html">Menu</a></li>
+                <li class ="part2">
+                    <i class="fa-solid fa-cart-shopping" onclick="location.href = 'check_out.html';"></i>
+                    <a href=""></a></li>
+                <li class ="part2"><a  class="sign" href="user_profile.html">Profile</a></li>
+                <li class ="part2"><a class="sign" href="register.html">Register</a></li>
+            </ul>
+        </div>
+    </div>
 
-   
 
-   </div>
+
+
+
+
+
 
 
    <div id="menu_selections">
@@ -143,7 +152,32 @@
 
 </section>
 
+
+
+
    
+
+   </div>
+
     
 </body>
+<div id ="safety_rules">
+    <button id ="Learn_more" onclick="show_rules()">Learn More</button>
+<h3 id ="safety_label">For Your Safety ! </h3>
+<img src="photos/safety.png" alt="" width="100px" height="100px" id ="safety_image">
+<div id="safety_in_rules">
+    <ul class ="safety_list">
+        <li>Riders/cooks have their body temperature taken on an hourly 
+            bases to monitor their health.</li>
+        <li>Riders/cooks wear masks and use hand sanitizers regularly.</li>
+        <li id ="last_in_item">Cashless transactions through credit card payments.</li>
+    </ul>
+    <ul class ="safety_list">
+        <li>Riders/cooks disinfect their delivery boxes and kitchens twice a day.</li>
+        <li>Riders follow a contact-less delivery approach where they ring the door 
+            and leave meals at the doorstep.</li>
+        <li>Riders follow a contact-less delivery approach where they ring the door 
+            and leave meals at the doorstep.</li>
+    </ul>
+</div>
 </html>

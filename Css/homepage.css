@@ -637,8 +637,9 @@ footer{
     position:relative;
     bottom: 0px;
     left: 0px;
-    width: 60%;
+    width: 100%;
     background: #111;
+    overflow: hidden;
   }
   .main-content{
     display: inline;
@@ -647,13 +648,16 @@ footer{
     flex-basis: 50%;
     padding: 10px 20px;
   }
+.main-content h2{
+    margin-top: 10px;
+}
   .box h2{
     font-size: 1.125rem;
     font-weight: 600;
     text-transform: uppercase;
+   
   }
   .box .content{
-    margin: 20px 0 0 0;
     position: relative;
   }
   .box .content:before{
@@ -724,8 +728,13 @@ footer{
   .right form .msg{
     margin-top: 10px;
   }
+  .right form input:focus,.right form textarea:focus{
+    outline: none;
+    color: white;
+  }
   .right form input, .right form textarea{
-    width: 100%;
+    width: 50%;
+    max-width: 50%;
     font-size: 1.0625rem;
     background: #151515;
     padding-left: 10px;
@@ -770,7 +779,7 @@ footer{
   .bottom center a{
     color: #f12020;
     text-decoration: none;
-  }
+  } 
   .bottom center a:hover{
     text-decoration: underline;
   }
