@@ -1,6 +1,3 @@
-*{
-    font-family: sans-serif;
-}
 body,html{
     height: 100%;
     width: 100%;
@@ -29,13 +26,13 @@ body,html{
     position: relative;
     margin-left: -2%;
 }
-ul{
+#side_panel ul{
     position: absolute;
     width: 100%;
    margin-left: 0;
  top: 10px;
 }
-li{
+#side_panel li{
 
     position: relative;
     overflow: hidden;
@@ -44,24 +41,31 @@ li{
 padding: 3px;
 margin-bottom: 0;
 }
-img{
+#side_panel img{
     width: 20%;
     max-width:50px;
   bottom: 0;
   margin-bottom: -6px;
 transition: 1s;
 }
-span{
+#side_panel span{
     position: absolute;
     left: 30%;
     bottom: 0;
 font-size: 90%;
 }
-li:hover{
+#side_panel li:hover{
 cursor: pointer;
 color: white;
 }
-li:hover img{
+#side_panel li:hover img{
     -webkit-transform: rotate(360deg);
    transform: rotate(360deg);
+}
+.right{
+    position: absolute;
+    right: 0;
+    width: 72vw;
+    height: 100vh;
+    top: 1px;
 }
