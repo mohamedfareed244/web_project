@@ -1,6 +1,8 @@
 body,html{
     height: 100%;
     width: 100%;
+    background: rgba(0, 0, 0, 0.7) url(../photos/food2.webp)  fixed;
+
 }
 #notification{
     left: 15%;
