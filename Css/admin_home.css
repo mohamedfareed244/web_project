@@ -1,8 +1,9 @@
 body,html{
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.7) url(../photos/food2.webp)  fixed;
-
+    background: rgba(0, 0, 0, 0.7) url(../photos/qqqq3.webp)  fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 #notification{
     left: 15%;
@@ -22,7 +23,7 @@ body,html{
     flex-wrap: wrap;
     width: 30%;
     max-width: 300px;
-    background-color: gray;
+    background-color: none;
     height: 110%;
     margin-top: -2%;
     position: relative;
@@ -72,6 +73,7 @@ color: white;
     width: 81vw;
     height: 100vh;
     top: 1px;
+    background-color:rgba(34, 33, 33, 0.521);
    
 }
 #msg-area{
