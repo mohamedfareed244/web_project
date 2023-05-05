@@ -11,6 +11,8 @@
     
     <link rel="stylesheet" href="Css/user.css">
     <link rel="stylesheet" href="Css/admin_home.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+    <script src="js/rej.js"></script>
 </head>
 
 <body>
@@ -167,7 +169,7 @@
         </div>
         <!-- mar3y  -->
         <!-- Fareed  -->
-        <div id ="msg-area" >
+        <div id ="msg-area" style="display: none;" >
             <div id ="customers-msgs">
 <ul id ="chat-list">
 <li>
@@ -220,7 +222,54 @@
             </div>
         </div>
         <!-- Fareed  -->
+                <!-- yassin  -->
+                <canvas id="myChart" style="width:100%;max-width:600px ;display:none;" ></canvas>
+
+        <script>
+        var xValues = ["Pizza", "burger", "shawerma", "mahshy", "chicken"];
+        var yValues = [55, 49, 44, 24, 88];
+        var barColors = ["black", "yellow", 'green'];
+        
+        new Chart("myChart", {
+          type: "bar",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+            legend: {display: false},
+            title: {
+              display: true,
+              text: "Most buying items"
+            }
+          }
+        });
+        </script>
+        <div id="Account" style="display: none;">
+            <h1> Admin name: Dr.Essam</h1> 
+            <h1>ID:1234</h1>
+            <h2>change password</h2>
+            <form action='#' method='post' onsubmit='return validate1(this)' 
+            style="background-color: aqua; width: 200px;height: 100px;">
+                <input type="password"name="psw" id="inputpass" placeholder="Enter new Password"  >
+                <div id='password' class='err'></div>
+                <input type="password" name="psw-confirmt" id="inputcpass" placeholder="confirm Password"  >
+                <div id='cpassword' class='err'></div>
+        
+                <button type="submit" class="registerbtn">submit</button>
+            </form>
+
+
+        </div>
+
+
+        
     </div>
+                    <!-- yassin  -->
+
 </body>
 
 </html>
