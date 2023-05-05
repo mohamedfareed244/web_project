@@ -116,6 +116,24 @@ function validatefName(field)
             return true;
         }
             
+        else
+        {
+            return false;
+        }
+    }
+function validate1(form)
+    {
+        let fail='';
+       
+        fail&=validatePassword(form.inputpass.value, form.inputcpass.value);
+
+
+
+        if(fail)
+        {
+            return true;
+        }
+            
         else{
             return false;
         }
