@@ -462,6 +462,8 @@ transition: .2s;
     grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
     /* margin-top: 10px; */
+    
+   
 } 
 
 .details .recentOrders{
@@ -473,12 +475,14 @@ transition: .2s;
     padding: 20px;
     box-shadow: 0 10px 25px rgb(232, 76, 3);
     border-radius: 20px;
+   
 }
 
 .details  .cardHeader{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+   
 
 }
 
