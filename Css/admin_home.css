@@ -10,6 +10,7 @@ body,html{
     background: rgba(0, 0, 0, 0.7) url(../photos/qqqq3.webp)  fixed;
     background-repeat: no-repeat;
     background-size: 100%;
+    overflow-x: hidden;
 }
 #notification{
     left: 15%;
@@ -382,13 +383,15 @@ transition: .2s;
 
 /* statistics */
 .cardBox{
-    margin-left: -2%;
+   
+
     position: relative;
     width: 100%;
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 30px;
+   
 
 
 }
@@ -402,6 +405,8 @@ transition: .2s;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
+    margin-right: 10%;
+    margin-left: -5%;
 
 
 }
@@ -572,6 +577,8 @@ transition: .2s;
     box-shadow: 0 7px 25px rgb(228, 68, 5);
     background-color: antiquewhite;
     border-radius: 20px;
+    /* margin-left: -2%; */
+    margin-right: 5%;
 
 
 }
