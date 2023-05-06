@@ -94,6 +94,9 @@ color: white;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(350px , 1fr));
     grid-gap: 20px 40px;
+    margin-right: 2%;
+    margin-left: 2%;
+    
 }
 .dd{
     display: flex;
@@ -185,7 +188,7 @@ color: white;
     cursor: pointer;
 }
 .ad{
-    background: rgb(74, 74, 225);
+    background: rgb(225, 190, 74);
     border: none;
     color: #fff;
     font-size: 17px;
@@ -194,9 +197,11 @@ color: white;
     width: 97px;
     position: relative;
     cursor: pointer;
-    right: -942px;
+    /* right: -942px; */
     bottom: 112px;
     height: 48px;
+    margin-left: 30%;
+   
 }
 .del:hover{
     background: red;
