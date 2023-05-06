@@ -10,7 +10,7 @@ body,html{
     background: rgba(0, 0, 0, 0.7) url(../photos/qqqq3.webp)  fixed;
     background-repeat: no-repeat;
     background-size: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 #notification{
     left: 15%;
@@ -56,8 +56,8 @@ margin-bottom: 0;
     max-width:50px;
   bottom: 0;
   margin-bottom: -9px;
-  margin-top: 2px;
-  margin-left: 7px;
+  margin-top: 10px;
+  margin-left: 30px;
 transition: 1s;
 }
 #side_panel span{
@@ -81,7 +81,8 @@ color: white;
     height: 100vh;
     top: 1px;
     background-color:rgba(34, 33, 33, 0.521);
-   
+   overflow-y: auto;
+   overflow-x: hidden;
 }
 /* mar3y */
 .menu{
@@ -187,6 +188,7 @@ color: white;
     width: 100px;
     cursor: pointer;
 }
+
 .ad{
     background: rgb(225, 190, 74);
     border: none;
@@ -236,8 +238,8 @@ overflow-y: auto;
     position: relative;
     list-style: none;
     width: 100%;
-    left: -39px;
-   top: -10px;
+    left: 2px;
+   top: 5px;
 }
 #chat-list li{
     border-radius: 12px;
@@ -245,7 +247,7 @@ overflow-y: auto;
     overflow: hidden;
     height: 60px;
     background-color: rgb(224, 220, 220);
-   border-top: 6px solid white;
+   border-top: 6px solid rgba(34, 33, 33, 0.521);;
     transition: .5s;
 }
 #chat-list li:hover{
@@ -295,6 +297,7 @@ overflow-y: auto;
     background-color:red;
     color: white;
     width: 100px;
+    height: 30px;
 transition: .2s;
 }
 #end-btn:hover{
@@ -312,6 +315,7 @@ transition: .2s;
     margin-top: 10px;
     float: left;
     width: 50%;
+    
     background-color: rgb(84, 209, 34);
     color: white;
    border-radius: 12px;
@@ -372,6 +376,7 @@ transition: .2s;
     border: none;
     width: 100px;
     transition: .4s;
+    height: 30px;
 }
 #send:hover{
     cursor: pointer;
@@ -391,6 +396,7 @@ transition: .2s;
    
 
     position: relative;
+  
     width: 100%;
     padding: 20px;
     display: grid;
@@ -410,8 +416,8 @@ transition: .2s;
     display: flex;
     justify-content: space-between;
     cursor: pointer;
-    margin-right: 10%;
-    margin-left: -5%;
+    margin-right: 5%;
+ 
 
 
 }
@@ -588,6 +594,7 @@ transition: .2s;
 
 }
 
+
 .recentCustomers .imgBx{
     position: relative;
     width: 40px;
@@ -613,6 +620,7 @@ transition: .2s;
 }
 
 .recentCustomers table tr td{
+   
     padding: 12px 10px;
 
 }

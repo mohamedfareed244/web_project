@@ -16,25 +16,32 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
-
+<script>
+    let current="ordd";
+    function change_view(target){
+        document.getElementById(current).style.display='none';
+        document.getElementById(target).style.display='block';
+        current=target;
+    }
+</script>
 <body>
     <div id="side_panel">
         <ul>
-            <li> <img src="photos/profile.png" alt=""><span> Users</span></li>
+            <li onclick="change_view('uss')"> <img src="photos/profile.png" alt=""><span> Users</span></li>
             <hr>
-            <li> <img src="photos/playlist.png" alt=""><span> Menu</span></li>
+            <li onclick="change_view('mmn')"> <img src="photos/playlist.png" alt=""><span> Menu</span></li>
             <hr>
-            <li> <img src="photos/website.png" alt=""><span> Orders</span>
+            <li onclick="change_view('ordd')"> <img src="photos/website.png" alt=""><span> Orders</span>
                 <!-- <span id="notification">2</span> -->
             </li>
             <hr>
-            <li> <img src="photos/customer.png" alt=""><span> Customers</span></li>
+            <li onclick="change_view('custt')"> <img src="photos/customer.png" alt=""><span> Customers</span></li>
             <hr>
-            <li> <img src="photos/user.png" alt=""><span> Your Account</span></li>
+            <li > <img src="photos/user.png" alt=""><span> Your Account</span></li>
             <hr>
-            <li> <img src="photos/analytics.png" alt=""><span> Statistics</span></li>
+            <li onclick="change_view('stt')"> <img src="photos/analytics.png" alt=""><span> Statistics</span></li>
             <hr>
-            <li> <img src="photos/chat.png" alt=""><span> Chat requests</span>
+            <li onclick="change_view('msg-area')"> <img src="photos/chat.png" alt=""><span> Chat requests</span>
                 <!-- <span id="notification">2</span> -->
             </li>
             <hr>
@@ -45,7 +52,7 @@
     <div class="right">
 
 <!-- mar3y  -->
-        <div class="main-content" style="display: none;">
+        <div class="main-content" style="display: none; background-color: white;" id="uss">
             <div class="table-title">
                 <div class="row">
                     <div class="col-sm-6 p-0 d-flex justify-content-lg-start justify-content-center">
@@ -170,8 +177,9 @@
             </table>
         </div>
         
-        <div class="menu" >
+        <div class="menu" id="mmn" style="display: none;">
             <div class="heading">
+
                 <h1>Restuernt food</h1>
                 <h3>&mdash;Menu info &mdash;</h3>
                 <div class="dd"><button class="ad">Add</button></div>
@@ -360,7 +368,7 @@
           }
         });
         </script>
-        <div id="Account" style="margin:auto; width: 300px ; padding-left: 120px; height: 450px; background-color: rgb(203, 224, 243);" >
+        <div id="Account" style="margin:auto; width: 300px ; padding-left: 120px; height: 450px; background-color: rgb(203, 224, 243); display: none;" >
             <h1> Admin name: Dr.Essam</h1> 
             <h1>ID:1234</h1>
             <h2>change password</h2>
@@ -381,7 +389,7 @@
 
         <!-- ali -->
         <!-- statistics -->
-        <div class="cardBox" style="display: none;">
+        <div class="cardBox" style="display: none;" id="stt">
             <div class="card">
                <div>
                 <div class="numbers">1,504</div>
@@ -431,15 +439,15 @@
 
 
         <!-- orders -->
-        <div class="details" >
-            <div class="recentOrders" style="display: none;">
+        <div class="details" style="width: 100%;" >
+            <div class="recentOrders"  id="ordd" style="width: 1100px; height: 700px; top: -30px; left: 5px;">
                 <div class="cardHeader">
                     <h2>Recent Orders</h2>
                     <a href="#" class="btnv">View All</a>
                 
                 </div>
 
-                <table>
+                <table style="width: 100%;">
                     <thead>
                         <tr>
                             <td>
@@ -561,7 +569,7 @@
                     </tbody>
                 </table>
             </div>
-            <div class="recentCustomers" style="display: none;">
+            <div class="recentCustomers" style="display: none;" id="custt">
                 <div class="cardHeader">
                     <h2>Recent Customers</h2>
                 </div>
